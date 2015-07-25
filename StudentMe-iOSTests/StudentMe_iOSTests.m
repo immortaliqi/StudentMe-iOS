@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "NSURL+SMURL.h"
 
 @interface StudentMe_iOSTests : XCTestCase
 
@@ -35,6 +36,12 @@
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
     }];
+}
+
+
+- (void)testUrlTools {
+    NSString *login = [NSURL smLoginString];
+    NSLog(@"user login url is %@", login);
 }
 
 @end

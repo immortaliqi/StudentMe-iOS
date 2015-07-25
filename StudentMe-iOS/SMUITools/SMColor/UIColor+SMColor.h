@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UIColor+SMColor.h
 //  StudentMe-iOS
 //
 //  Created by SeanChense on 15/7/25.
@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UIColor (SMColor)
+
+//for example
++ (UIColor *)smBlue;
++ (UIColor *)smBlueLight;
 
 
 @end
-
