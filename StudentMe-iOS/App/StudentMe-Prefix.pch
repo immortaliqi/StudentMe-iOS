@@ -1,0 +1,23 @@
+//
+//  StudentMe-Prefix.pch
+//  StudentMe-iOS
+//
+//  Created by SeanChense on 15/7/25.
+//  Copyright (c) 2015年 UESTC-BBS. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+
+static BOOL OSVersionIsAtLeastiOS7() {
+    return (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1);
+}

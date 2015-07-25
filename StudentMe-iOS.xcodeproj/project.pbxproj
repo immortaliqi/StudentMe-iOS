@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		141A5BC71B63187700A5F666 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5BC61B63187700A5F666 /* main.m */; };
-		141A5BCA1B63187700A5F666 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5BC91B63187700A5F666 /* AppDelegate.m */; };
 		141A5BD01B63187700A5F666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141A5BCE1B63187700A5F666 /* Main.storyboard */; };
 		141A5BD21B63187700A5F666 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141A5BD11B63187700A5F666 /* Images.xcassets */; };
 		141A5BD51B63187700A5F666 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141A5BD31B63187700A5F666 /* LaunchScreen.xib */; };
 		141A5BE11B63187700A5F666 /* StudentMe_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5BE01B63187700A5F666 /* StudentMe_iOSTests.m */; };
 		141A5BEC1B638ECC00A5F666 /* UIColor+SMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5BEB1B638ECC00A5F666 /* UIColor+SMColor.m */; };
 		141A5BF31B638FF100A5F666 /* NSURL+SMURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5BF21B638FF100A5F666 /* NSURL+SMURL.m */; };
+		141A5BFC1B639B3500A5F666 /* SMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5BFB1B639B3500A5F666 /* SMBaseViewController.m */; };
+		141A5C001B639BDD00A5F666 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5BFF1B639BDD00A5F666 /* AppDelegate.m */; };
+		141A5C041B639DF200A5F666 /* SMHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5C031B639DF200A5F666 /* SMHostViewController.m */; };
+		141A5C081B639EC100A5F666 /* SMSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5C071B639EC100A5F666 /* SMSideDrawerViewController.m */; };
+		141A5C0E1B639FD000A5F666 /* SMLeftSideViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5C0C1B639FD000A5F666 /* SMLeftSideViewTableViewCell.m */; };
+		141A5C0F1B639FD000A5F666 /* SMLeftSideViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141A5C0D1B639FD000A5F666 /* SMLeftSideViewTableViewCell.xib */; };
+		141A5C141B63A3DB00A5F666 /* SMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5C131B63A3DB00A5F666 /* SMNavigationViewController.m */; };
+		141A5C181B63A52A00A5F666 /* SMDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 141A5C171B63A52A00A5F666 /* SMDrawerVisualStateManager.m */; };
 		4FC19A066281A781C11F8082 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EA0B61A4282282439B6EC9F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -32,8 +39,6 @@
 		141A5BC11B63187700A5F666 /* StudentMe-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StudentMe-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		141A5BC51B63187700A5F666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		141A5BC61B63187700A5F666 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		141A5BC81B63187700A5F666 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		141A5BC91B63187700A5F666 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		141A5BCF1B63187700A5F666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		141A5BD11B63187700A5F666 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		141A5BD41B63187700A5F666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,6 +49,22 @@
 		141A5BEB1B638ECC00A5F666 /* UIColor+SMColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SMColor.m"; path = "SMUITools/SMColor/UIColor+SMColor.m"; sourceTree = "<group>"; };
 		141A5BF11B638FF100A5F666 /* NSURL+SMURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+SMURL.h"; path = "SMNet/SMUrl/NSURL+SMURL.h"; sourceTree = "<group>"; };
 		141A5BF21B638FF100A5F666 /* NSURL+SMURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+SMURL.m"; path = "SMNet/SMUrl/NSURL+SMURL.m"; sourceTree = "<group>"; };
+		141A5BFA1B639B3500A5F666 /* SMBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMBaseViewController.h; path = SMViewControllers/SMBaseViewController/SMBaseViewController.h; sourceTree = "<group>"; };
+		141A5BFB1B639B3500A5F666 /* SMBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMBaseViewController.m; path = SMViewControllers/SMBaseViewController/SMBaseViewController.m; sourceTree = "<group>"; };
+		141A5BFE1B639BDD00A5F666 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = App/AppDelegate.h; sourceTree = "<group>"; };
+		141A5BFF1B639BDD00A5F666 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = App/AppDelegate.m; sourceTree = "<group>"; };
+		141A5C011B639C0300A5F666 /* StudentMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "StudentMe-Prefix.pch"; path = "App/StudentMe-Prefix.pch"; sourceTree = "<group>"; };
+		141A5C021B639DF200A5F666 /* SMHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMHostViewController.h; path = SMViewControllers/SMHost/SMHostViewController.h; sourceTree = "<group>"; };
+		141A5C031B639DF200A5F666 /* SMHostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMHostViewController.m; path = SMViewControllers/SMHost/SMHostViewController.m; sourceTree = "<group>"; };
+		141A5C061B639EC100A5F666 /* SMSideDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMSideDrawerViewController.h; path = SMViewControllers/SMSideDrawerViewController/SMSideDrawerViewController.h; sourceTree = "<group>"; };
+		141A5C071B639EC100A5F666 /* SMSideDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMSideDrawerViewController.m; path = SMViewControllers/SMSideDrawerViewController/SMSideDrawerViewController.m; sourceTree = "<group>"; };
+		141A5C0B1B639FD000A5F666 /* SMLeftSideViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLeftSideViewTableViewCell.h; sourceTree = "<group>"; };
+		141A5C0C1B639FD000A5F666 /* SMLeftSideViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLeftSideViewTableViewCell.m; sourceTree = "<group>"; };
+		141A5C0D1B639FD000A5F666 /* SMLeftSideViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SMLeftSideViewTableViewCell.xib; sourceTree = "<group>"; };
+		141A5C121B63A3DB00A5F666 /* SMNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMNavigationViewController.h; path = SMViewControllers/SMNavigationViewController/SMNavigationViewController.h; sourceTree = "<group>"; };
+		141A5C131B63A3DB00A5F666 /* SMNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMNavigationViewController.m; path = SMViewControllers/SMNavigationViewController/SMNavigationViewController.m; sourceTree = "<group>"; };
+		141A5C161B63A52A00A5F666 /* SMDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SMDrawerVisualStateManager.h; path = SMVisualStateManager/SMDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		141A5C171B63A52A00A5F666 /* SMDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SMDrawerVisualStateManager.m; path = SMVisualStateManager/SMDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		2BA567F2AE403AD275B3D2A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2EA0B61A4282282439B6EC9F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		43EA34263FE76C9E2A553A79 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,10 +112,12 @@
 		141A5BC31B63187700A5F666 /* StudentMe-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				141A5C151B63A50300A5F666 /* SMVisualStateManager */,
+				141A5C091B639F5700A5F666 /* CustomView */,
+				141A5BFD1B639BCF00A5F666 /* App */,
+				141A5BF41B639A8C00A5F666 /* SMViewControllers */,
 				141A5BEF1B638FB900A5F666 /* SMNet */,
 				141A5BED1B638ED600A5F666 /* SMUITools */,
-				141A5BC81B63187700A5F666 /* AppDelegate.h */,
-				141A5BC91B63187700A5F666 /* AppDelegate.m */,
 				141A5BCE1B63187700A5F666 /* Main.storyboard */,
 				141A5BD11B63187700A5F666 /* Images.xcassets */,
 				141A5BD31B63187700A5F666 /* LaunchScreen.xib */,
@@ -161,6 +184,98 @@
 				141A5BF21B638FF100A5F666 /* NSURL+SMURL.m */,
 			);
 			name = SMURL;
+			sourceTree = "<group>";
+		};
+		141A5BF41B639A8C00A5F666 /* SMViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				141A5C111B63A39D00A5F666 /* SMNavigationViewController */,
+				141A5C051B639EAF00A5F666 /* SMSideDrawerViewController */,
+				141A5BF61B639AC300A5F666 /* SMBaseViewController */,
+				141A5BF51B639A9300A5F666 /* SMHost */,
+			);
+			name = SMViewControllers;
+			sourceTree = "<group>";
+		};
+		141A5BF51B639A9300A5F666 /* SMHost */ = {
+			isa = PBXGroup;
+			children = (
+				141A5C021B639DF200A5F666 /* SMHostViewController.h */,
+				141A5C031B639DF200A5F666 /* SMHostViewController.m */,
+			);
+			name = SMHost;
+			sourceTree = "<group>";
+		};
+		141A5BF61B639AC300A5F666 /* SMBaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				141A5BFA1B639B3500A5F666 /* SMBaseViewController.h */,
+				141A5BFB1B639B3500A5F666 /* SMBaseViewController.m */,
+			);
+			name = SMBaseViewController;
+			sourceTree = "<group>";
+		};
+		141A5BFD1B639BCF00A5F666 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				141A5BFE1B639BDD00A5F666 /* AppDelegate.h */,
+				141A5BFF1B639BDD00A5F666 /* AppDelegate.m */,
+				141A5C011B639C0300A5F666 /* StudentMe-Prefix.pch */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		141A5C051B639EAF00A5F666 /* SMSideDrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				141A5C061B639EC100A5F666 /* SMSideDrawerViewController.h */,
+				141A5C071B639EC100A5F666 /* SMSideDrawerViewController.m */,
+			);
+			name = SMSideDrawerViewController;
+			sourceTree = "<group>";
+		};
+		141A5C091B639F5700A5F666 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				141A5C0A1B639F6600A5F666 /* CustomCell */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		141A5C0A1B639F6600A5F666 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				141A5C101B639FE900A5F666 /* SMLeftSideViewTableViewCell */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		141A5C101B639FE900A5F666 /* SMLeftSideViewTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				141A5C0B1B639FD000A5F666 /* SMLeftSideViewTableViewCell.h */,
+				141A5C0C1B639FD000A5F666 /* SMLeftSideViewTableViewCell.m */,
+				141A5C0D1B639FD000A5F666 /* SMLeftSideViewTableViewCell.xib */,
+			);
+			name = SMLeftSideViewTableViewCell;
+			sourceTree = "<group>";
+		};
+		141A5C111B63A39D00A5F666 /* SMNavigationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				141A5C121B63A3DB00A5F666 /* SMNavigationViewController.h */,
+				141A5C131B63A3DB00A5F666 /* SMNavigationViewController.m */,
+			);
+			name = SMNavigationViewController;
+			sourceTree = "<group>";
+		};
+		141A5C151B63A50300A5F666 /* SMVisualStateManager */ = {
+			isa = PBXGroup;
+			children = (
+				141A5C161B63A52A00A5F666 /* SMDrawerVisualStateManager.h */,
+				141A5C171B63A52A00A5F666 /* SMDrawerVisualStateManager.m */,
+			);
+			name = SMVisualStateManager;
 			sourceTree = "<group>";
 		};
 		36FB36218007C8E16C87FDC6 /* Frameworks */ = {
@@ -264,6 +379,7 @@
 			files = (
 				141A5BD01B63187700A5F666 /* Main.storyboard in Resources */,
 				141A5BD51B63187700A5F666 /* LaunchScreen.xib in Resources */,
+				141A5C0F1B639FD000A5F666 /* SMLeftSideViewTableViewCell.xib in Resources */,
 				141A5BD21B63187700A5F666 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,10 +431,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				141A5BCA1B63187700A5F666 /* AppDelegate.m in Sources */,
+				141A5C181B63A52A00A5F666 /* SMDrawerVisualStateManager.m in Sources */,
+				141A5C041B639DF200A5F666 /* SMHostViewController.m in Sources */,
 				141A5BC71B63187700A5F666 /* main.m in Sources */,
 				141A5BF31B638FF100A5F666 /* NSURL+SMURL.m in Sources */,
+				141A5BFC1B639B3500A5F666 /* SMBaseViewController.m in Sources */,
+				141A5C141B63A3DB00A5F666 /* SMNavigationViewController.m in Sources */,
 				141A5BEC1B638ECC00A5F666 /* UIColor+SMColor.m in Sources */,
+				141A5C001B639BDD00A5F666 /* AppDelegate.m in Sources */,
+				141A5C0E1B639FD000A5F666 /* SMLeftSideViewTableViewCell.m in Sources */,
+				141A5C081B639EC100A5F666 /* SMSideDrawerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +567,8 @@
 			baseConfigurationReference = 2BA567F2AE403AD275B3D2A5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudentMe-iOS/App/StudentMe-Prefix.pch";
 				INFOPLIST_FILE = "StudentMe-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -456,6 +580,8 @@
 			baseConfigurationReference = 43EA34263FE76C9E2A553A79 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StudentMe-iOS/App/StudentMe-Prefix.pch";
 				INFOPLIST_FILE = "StudentMe-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
